@@ -1,0 +1,124 @@
+
+h1 {
+  align-self: center;
+  color: #f8fdff;
+  background-color: #0e1214;
+  margin-left:20%;
+  margin-top:25%;
+
+}
+
+#dateRange {
+  display:none;
+}
+
+.scopeAndFacts h4 {
+  align-self: center;
+  font-style: italic;
+  color: #0e1214;
+}
+button {
+  color: orange;
+  font-size: .75em;
+  padding: 7px;
+  margin: 10px;
+  border-radius: 5px;
+  border-color: transparent;
+  background-color: #0e1214;
+
+}
+.sun{
+  margin-right:10%;
+  text-align:center;
+}
+.pick-btn{
+  font-size: 20px;
+  
+}
+
+.threeScopes {
+  opacity: 0.8;
+  background-color: #0e1214;
+  margin-left:20%;
+
+}
+
+p {
+  font-size: 2em;
+  background-color: #0e1214;
+color:white;
+}
+
+.threeButtons {
+  background-color: #0a0a0a;
+  height:50px;
+  color:white;
+  margin-left:20%;
+  padding:20px;
+}
+
+
+@media only screen and (max-width: 415px){
+  .scopeAndFacts {
+    display: unset;
+    text-align:justify;
+  }
+  .threeButtons {
+    display: flex;
+    justify-content: center;
+  }
+  button{
+    font-size: 1em;
+  }
+  h1{
+    margin: 0;
+  }
+  h4 {
+    margin: 0;
+  }
+  .threeScopes h3 {
+  margin-bottom: 0;
+ }
+ .threeScopes p{
+   font-size: 1.5em;
+ }
+ p{
+   margin-top: 7px;
+ }
+ a{
+ display: flex;
+ justify-content: center;
+ padding-top: 50px;
+}
+a h3{
+ width: 50%;
+}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 416px){
+  .scopeAndFacts {
+    display: unset;
+  }
+   .threeButtons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+  }
+  button{
+    font-size: 1em;
+  }
+  h1{
+    margin-bottom: 0;
+  }
+  h4 {
+    margin: 0;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  a h3{
+    width: 30%;
+  }
+}
