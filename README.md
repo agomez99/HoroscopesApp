@@ -1,5 +1,5 @@
 # Zodiaks
- A website that shows a daily horoscope generated from an API.
+ A website created with the MERN stack that shows a daily horoscope generated from an API.
  <br>
  https://nervous-hermann-145a66.netlify.app/
  <br>
