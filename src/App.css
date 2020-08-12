@@ -1,11 +1,18 @@
 .App {
   text-align: center;
 }
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 body{
-  background-color: #000000;
-  background-image: url("/nebula.jpg");
+  background-image: url("/space.mp4");
   background-repeat: no-repeat;
-
+    z-index: 3;
 }
 .App-logo {
   height: 40vmin;

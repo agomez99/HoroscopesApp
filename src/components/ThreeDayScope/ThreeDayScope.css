@@ -6,6 +6,7 @@ h1 {
   margin-left:20%;
   opacity: 0.8;
   text-align: center;
+  border-radius: 25px;
 
 
 }
@@ -42,13 +43,16 @@ button {
   opacity: 0.8;
   background-color: #0e1214;
   margin-left:20%;
-
+  border-radius: 25px;
+  padding:10px;
 }
 
 p {
   font-size: 2em;
   background-color: #0e1214;
 color:white;
+border-radius: 25px;
+
 }
 
 .threeButtons {
@@ -57,6 +61,7 @@ color:white;
   color:white;
   margin-left:20%;
   padding:20px;
+
 }
 
 

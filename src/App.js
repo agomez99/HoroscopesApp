@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route} from "react-router-dom";
-//import sample from './space.mp4';
+import sample from './space.mp4';
 
 
 import signInfo from './data/horoscope2.json'
@@ -24,11 +24,14 @@ class App extends Component {
               <h1 className="title-hdr">Zodiaks</h1>
 
         <main>
-        {/* <video className='videoTag' autoPlay loop muted>
+         
+        <video className='videoTag' autoPlay loop muted>
           <source src={sample} type='video/mp4' />
-        </video> */}
+                    </video>
+
           <Route exact path='/' component={LandingPage} />
           <Route path={'/horoscope/:signId'} component={ThreeDayScope} />
+
         </main>
       </>
     )
