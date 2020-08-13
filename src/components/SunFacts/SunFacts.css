@@ -7,12 +7,12 @@
   grid-row-end: 4;
   background-color: #0e1214;
   opacity: 0.8;
-  margin-left: 40%;
   margin-top: 20%;
   margin-bottom: 10px;
   border-radius: 25px;
   padding-bottom: 20px;
   padding-top: 10px;
+  display: block;
 }
 .zodiac {
   margin-top: 20%;

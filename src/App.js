@@ -21,14 +21,11 @@ class App extends Component {
   render() {
     return (
       <>
-              <h1 className="title-hdr">Zodiaks</h1>
-
+     <h1 className="title-hdr">Zodiaks</h1>
         <main>
-         
         <video className='videoTag' autoPlay loop muted>
           <source src={sample} type='video/mp4' />
-                    </video>
-
+         </video>
           <Route exact path='/' component={LandingPage} />
           <Route path={'/horoscope/:signId'} component={ThreeDayScope} />
 

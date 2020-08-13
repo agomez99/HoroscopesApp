@@ -3,7 +3,6 @@ import axios from 'axios'
 import SunFacts from '../SunFacts/SunFacts'
 import { Link } from 'react-router-dom'
 import './ThreeDayScope.css'
-import 'materialize-css';
 import {Row, Col, Button } from 'react-materialize';
 class ThreeDayScope extends Component {
   constructor(props) {
@@ -57,36 +56,32 @@ class ThreeDayScope extends Component {
     return (
 <div className="scope">
         <Row>
-          <Col
-            className=" white-text"
-            s={1}>
+          <Col className=" white-text"  s={6}>
         <h1 className="zodiac">{this.state.sign}</h1>
         <h4 id='dateRange'>({this.state.dateRange})</h4>
         <div className='threeScopes'>
           <h3>{this.state.day} - {this.state.currentDate}</h3>
           <p>{this.state.description}</p>
         </div>
-        <span className='threeButtons'>
+          <div className='threeButtons'>
           <Button onClick={() => this.clickYesterday()} 
-          waves='light'
-          style={{ backgroundColor: 'black', color:'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center' }} >Yesterday</Button>
+         node="button"  className="waves-effect waves-purple"
+          style={{ marginRight:'10px',backgroundColor: 'black', color:'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center',paddingBottom: '30px'}} >Yesterday</Button>
           <Button onClick={() => this.clickToday()}
-            waves='light'
-          style={{ backgroundColor: 'black', color:'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center' }}>Today</Button>
+         node="button" className="waves-effect waves-purple"               
+          style={{marginRight:'10px', backgroundColor: 'black', color:'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center',paddingBottom: '30px' }}>Today</Button>
           <Button onClick={() => this.clickTmrw()}
-            waves='light'
-          style={{ backgroundColor: 'black', color:'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center' }}>Tomorrow</Button>
-            </span>
-           
+          node="button" className="waves-effect waves-purple"               
+          style={{ backgroundColor: 'black', color:'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center',paddingBottom: '30px'}}>Tomorrow</Button>
+           </div>
 
           </Col>
-          <Col
-            className="sun"
-            s={1}><SunFacts {...this.state} />
-             <Link to='/' style={{ textDecoration: 'none', color: '#C4DDE9', gridRowStart: '4', gridColumnStart: '7', alignSelf: 'center' }}>
-              <Button className="pick-btn" node="button"
-                waves='light'
-                style={{ backgroundColor: 'purple', color:'white', border: 'solid 1px #C4DDE9', padding: '25px', textAlign: 'center', marginLeft:'38%',marginrIGHT:'33.3%'}}>Pick another sign</Button>
+          <Col className="sun" s={2}>
+          <SunFacts {...this.state}  />
+            <Link to='/' style={{ textDecoration: 'none', color: '#C4DDE9', alignSelf: 'center' }}>
+            <Button
+            node="button" className="waves-effect waves-light"               
+              style={{ backgroundColor: 'purple', color: 'yellow', border: 'solid 1px #C4DDE9', margin:'auto',paddingBottom: '50px', paddingTop:'20px', display:'flex'}}>Pick another sign</Button>
             </Link>
 
           </Col>
