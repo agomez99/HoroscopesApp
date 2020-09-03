@@ -37,15 +37,15 @@
 
 @media only screen and (max-width: 415px){
   .zodiacMap {
-    display: unset;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding:10px;
   }
   .zodiacImg{
     padding: 5px;
     margin: 5px;
+    max-width: 120px;
   }
   .zodiacTitle {
     display: none;
@@ -57,23 +57,34 @@
   }
 }
 
-@media only screen and (max-width: 800px) and (min-width: 416px){
+@media only screen and (max-width: 800px) and (min-width: 375px){
   .zodiacMap {
-    display: unset;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 10px;
+    grid-gap:0;
+
+  }
+  h1.hdr{
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:-300px;
+    display:block;
+    text-align:center;
+    
   }
   .zodiacImg{
     padding: 5px;
-    margin: 0 15px;
+    max-width: 100px;
   }
   .zodiacTitle {
     display: none;
     opacity: 1;
-    position: unset;
     color: rgb(153, 0, 255);
+  }
+  a{
+    padding:0;
+  }
+  div.zodiacMap{
+    margin:0;
+    height:100%;
+
   }
 }

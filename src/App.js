@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Route} from "react-router-dom";
 import sample from './space.mp4';
-
-
 import signInfo from './data/horoscope2.json'
 import ThreeDayScope from './components/ThreeDayScope/ThreeDayScope'
 import LandingPage from './pages/LandingPage'

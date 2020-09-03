@@ -54,7 +54,10 @@ class ThreeDayScope extends Component {
 
   render() {
     return (
+
 <div className="scope">
+<h2 style={{textAlign:"center", zIndex:"3"}}>Zodiacs</h2>
+
         <Row>
           <Col className=" white-text"  s={6}>
         <h1 className="zodiac">{this.state.sign}</h1>
