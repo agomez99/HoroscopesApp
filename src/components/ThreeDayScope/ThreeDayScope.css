@@ -110,11 +110,10 @@ p {
 
   }
   .threeButtons {
-    display:inline-block;
     padding-top:0px;
-    width:100px;
-    left:100px;
-    bottom:100px;
+    width:400px;
+    left:-60px;
+    bottom:-100px;
     
   }
   button {
@@ -149,5 +148,9 @@ p {
   }
   .sunFacts{
     margin-left:0;
+  }
+
+  #new{
+    bottom:-60px;
   }
 }

@@ -83,7 +83,7 @@ class ThreeDayScope extends Component {
           <SunFacts {...this.state}  />
             <Link to='/' style={{ textDecoration: 'none', color: '#C4DDE9', alignSelf: 'center' }}>
             <Button
-            node="button" className="waves-effect waves-light"               
+            node="button" className="waves-effect waves-light" id="new"         
               style={{ backgroundColor: 'purple', color: 'yellow', border: 'solid 1px #C4DDE9', margin:'auto',paddingBottom: '50px', paddingTop:'20px', display:'flex'}}>Pick another sign</Button>
             </Link>
 
