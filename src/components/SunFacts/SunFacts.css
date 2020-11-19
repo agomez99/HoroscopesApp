@@ -19,8 +19,7 @@
   margin-left: 50%;
   display: inline-flex;
   padding:12px;
-  padding-left: 30px;
-  padding-right: 30px;
+
 }
 
 .sunFacts p {
@@ -28,6 +27,7 @@
   opacity: 0.8;
   background-color: #0e1214;
   color:yellow;
+
 }
 
 @media only screen and (max-width: 415px) {
@@ -41,26 +41,31 @@
     background-color: #0e1214;
     opacity: 0.8;
     margin-left: 40%;
-    margin-top: 20%;
+    margin-top: 5%;
     border-radius: 25px;
-  
+    
   }
-  .sunFacts h3 {
-    display: none;
-  }
+
 }
 
-@media only screen and (max-width: 800px) and (min-width: 416px) {
+
+
+
+
+
+
+
+@media only screen and (max-width: 400px) and (min-width: 416px) {
   .sunFacts {
-    display: unset;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .sunFacts h3 {
-    display: none;
-  }
+
   p {
     padding: 10px;
+    
   }
+
+
+
 }
