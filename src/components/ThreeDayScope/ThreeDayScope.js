@@ -56,7 +56,7 @@ class ThreeDayScope extends Component {
     return (
 
 <div className="scope">
-<h2 style={{textAlign:"center", zIndex:"0"}}>Zodiacs</h2>
+<h1 className="title-hdr">Zodiaks</h1>
 
         <Row>
           <Col className=" white-text"  s={6}>
