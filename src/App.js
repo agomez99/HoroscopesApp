@@ -19,8 +19,9 @@ class App extends Component {
   render() {
     return (
       <>
-     <h1 className="title-hdr">Zodiaks</h1>
         <main>
+        <h1 className="title-hdr">Zodiaks</h1>
+
         <video className='videoTag' autoPlay loop muted>
           <source src={sample} type='video/mp4' />
          </video>

@@ -9,6 +9,12 @@ video {
   top: 0;
   left: 0;
 }
+
+.videoTag{
+z-index: 0;
+}
+
+
 body{
   background-image: url("/space.mp4");
   background-repeat: no-repeat;
@@ -47,8 +53,22 @@ body{
   display: inline-flex;
   padding:12px;  }
 
+
   .title-hdr{
+    font-size: 6vw;
     text-align: center;
-    margin-left:42%;
-    margin-right:42%;
+    background-color: rgb(24, 24, 24);
+
   }
+
+  @media only screen and (max-width: 500px) and (min-width: 116px) {
+
+  .title-hdr{
+    font-size: 12vw;
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+    padding-top: 18%;
+    margin-top: -15%;
+
+  }
+}

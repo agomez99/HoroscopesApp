@@ -41,11 +41,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding:10px;
+    grid-gap: 2px;
   }
   .zodiacImg{
     padding: 5px;
     margin: 5px;
-    max-width: 120px;
+    max-width: 100px;
   }
   .zodiacTitle {
     display: none;
@@ -54,6 +55,15 @@
     position: relative;
     color: rgb(140, 0, 255);
     padding: 2px 0 10px 0;
+  }
+
+  a{padding: 0px;}
+
+  .hdr{
+    font-size: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+
   }
 }
 
@@ -65,7 +75,6 @@
   h1.hdr{
     margin-left: auto;
     margin-right:auto;
-    margin-top:100px;
     display:block;
     text-align:center;
     
@@ -85,6 +94,13 @@
   div.zodiacMap{
     margin:0;
     height:100%;
+
+  }
+  
+  .hdr{
+    font-size: 1rem;
+    margin-right: auto;
+    margin-left: auto;
 
   }
 }
