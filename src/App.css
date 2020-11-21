@@ -51,7 +51,10 @@ body{
   margin-left:33.3%;
   margin-right:33.3%;
   display: inline-flex;
-  padding:12px;  }
+  padding:12px;  
+  white-space: nowrap;
+  background-color: transparent;
+}
 
 
   .title-hdr{

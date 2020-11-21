@@ -30,12 +30,6 @@
 }
 
 
-.img__wrap {
-  position: relative;
-
-}
-
-
 .zodiacImg:hover {
   opacity: 0.1;
   transition: opacity 0.5s;
