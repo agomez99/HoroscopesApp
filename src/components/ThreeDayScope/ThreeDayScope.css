@@ -21,8 +21,9 @@ h1.title-hdr{
   display:block;
 }
 h3{
-  font-family: 'Poiret One', cursive;
-
+  font-family: 'Sawarabi Mincho', sans-serif;
+  color: rgb(227, 252, 2);
+  text-align: center;
 }
 
 .col{
@@ -33,7 +34,7 @@ h3{
   padding:5px;
   opacity: 1;
   text-align: center;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Sawarabi Mincho', sans-serif;
 
 }
 #dateRange {
@@ -73,7 +74,7 @@ p {
   background-color: #0e1214;
   color: white;
   border-radius: 25px;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Sawarabi Mincho', sans-serif;
 
 }
 
