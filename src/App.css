@@ -57,8 +57,10 @@ body{
   .title-hdr{
     font-size: 8vw;
     text-align: center;
-    background-color: purple;
+    background-color: transparent;
     display: inline;
+    text-shadow: 5px 10px 10px #ae00ff60;
+
   }
 
   @media only screen and (max-width: 500px) and (min-width: 116px) {
