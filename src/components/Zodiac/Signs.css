@@ -4,7 +4,6 @@
 
 }
 .zodiacTitle {
-  opacity: 0;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -16,7 +15,6 @@
 
 }
 .zodiacDate {
-  opacity: 0;
   text-align: center;
   position:absolute;
   color:rgb(254, 254, 255);
@@ -75,14 +73,6 @@
     margin: 5px;
     max-width: 100px;
   }
-  .zodiacTitle {
-    display: none;
-    opacity: 1;
-    position: unset;
-    position: relative;
-    color: rgb(140, 0, 255);
-    padding: 2px 0 10px 0;
-  }
 
   a{padding: 0px;}
 
@@ -94,7 +84,7 @@
   }
 }
 
-@media only screen and (max-width: 800px) and (min-width: 375px){
+@media only screen and (max-width: 812px) and (min-width: 375px){
   .zodiacMap {
     grid-gap:0;
 
@@ -111,9 +101,16 @@
     max-width: 100px;
   }
   .zodiacTitle {
-    display: none;
-    opacity: 1;
-    color: rgb(153, 0, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    margin: 0;  
+    font-size: 1.5rem;
+    visibility: visible;
+    text-shadow: 0 0 3px #ff00dd;
+
   }
   a{
     padding:0;
@@ -130,4 +127,6 @@
     margin-left: auto;
 
   }
+
+  
 }
