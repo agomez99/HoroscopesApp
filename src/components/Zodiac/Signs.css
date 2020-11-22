@@ -27,6 +27,9 @@
 
 }
 
+.zodiacImg{
+  border-radius: 8px;
+}
 
 .zodiacImg:hover {
   opacity: 0.1;
@@ -140,6 +143,8 @@
     margin-left: auto;
 
   }
-
+  .zodiacImg{
+    border-radius: 8px;
+  }
   
 }
