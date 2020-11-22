@@ -15,9 +15,7 @@ class Signs extends Component {
 
   render() {
     return (
-
       <div className='zodiacMap'>
-      
         {this.state.signInfo.map((sign, id) =>
           <div key={id}>
             <Link  to={`/horoscope/${sign.title}`}>
