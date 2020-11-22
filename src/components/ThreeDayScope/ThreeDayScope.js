@@ -4,6 +4,7 @@ import SunFacts from '../SunFacts/SunFacts'
 import { Link } from 'react-router-dom'
 import './ThreeDayScope.css'
 import {Row, Col, Button } from 'react-materialize';
+
 class ThreeDayScope extends Component {
   constructor(props) {
     super(props)
