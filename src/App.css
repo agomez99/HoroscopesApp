@@ -1,3 +1,7 @@
+html,body{overflow-y: scroll; }
+
+
+
 .App {
   text-align: center;
 }
@@ -48,6 +52,7 @@ body{
 
 .hdr{
   text-align: center;
+  font-size: 2rem;
   margin-left:33.3%;
   margin-right:33.3%;
   display: inline-flex;
@@ -56,6 +61,13 @@ body{
   background-color: transparent;
 }
 
+.title-hdr1{
+  font-size: 8vw;
+  margin-top: 15%;
+  text-align: center;
+  background-color: transparent;
+  text-shadow: 5px 10px 10px #ae00ff60;
+}
 
   .title-hdr{
     font-size: 8vw;
@@ -63,7 +75,7 @@ body{
     background-color: transparent;
     display: inline;
     text-shadow: 5px 10px 10px #ae00ff60;
-
+    
   }
 
   @media only screen and (max-width: 500px) and (min-width: 116px) {
