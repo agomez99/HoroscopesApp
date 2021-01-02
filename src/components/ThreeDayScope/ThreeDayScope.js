@@ -4,9 +4,15 @@ import SunFacts from '../SunFacts/SunFacts'
 import { Link } from 'react-router-dom'
 import './ThreeDayScope.css'
 import { Row, Col, Button } from 'react-materialize';
+import {FacebookShareButton, FacebookIcon} from "react-share";
+
 
 class ThreeDayScope extends Component {
+  
   constructor(props) {
+
+
+
     super(props)
 
     this.state = {
@@ -19,7 +25,7 @@ class ThreeDayScope extends Component {
       luckyNumber: '',
       luckyTime: '',
       sign: '',
-      day: 'Today'
+      day: 'Today',
     }
   }
 
@@ -46,17 +52,26 @@ class ThreeDayScope extends Component {
       mood: response.data.mood,
       color: response.data.color,
       luckyNumber: response.data['lucky_number'],
-      luckyTime: response.data['lucky_time']
+      luckyTime: response.data['lucky_time'],
+
+
     }
     )
+
   }
 
   render() {
+    const shareButtonProps = {
+      url: "https://zodiacs.netlify.app/",
+      network: "Facebook",
+      text: "Give it a try - react-custom-share component",
+      media:"https://cdn.images.express.co.uk/img/dynamic/130/590x/secondary/love-horoscope-2020-zodiac-wheel-astrology-2561729.jpg?r=1602571722322",
+      longtext:
+        "Horoscope."
+    };
     return (
-
       <div className="scope">
         <h1 className="title-hdr">Zodiaks</h1>
-
         <Row>
           <Col className=" white-text" s={6}>
             <h1 className="zodiac">{this.state.sign}</h1>
@@ -65,8 +80,6 @@ class ThreeDayScope extends Component {
               <h3>{this.state.day} - {this.state.currentDate}</h3>
               <p>{this.state.description}</p>
             </div>
-
-
             <div className='threeButtons'>
               <Button onClick={() => this.clickYesterday()}
                 node="button" className="waves-effect waves-purple"
@@ -90,9 +103,23 @@ class ThreeDayScope extends Component {
                 node="button" className="waves-effect waves-light" id="btn"
                 style={{ backgroundColor: 'purple', color: 'yellow', border: 'solid 1px #C4DDE9', margin: 'auto', paddingBottom: '50px', paddingTop: '20px', display: 'flex' }}>Pick another sign</Button>
             </Link>
-          </Col>
-        </Row>
+            <div >
+          <label>Share</label>            
+          <FacebookShareButton {...shareButtonProps} 
+                 quote={this.state.sign + " " +  this.state.currentDate}
+                 media={shareButtonProps.media}
+                  url={window.location.href} 
+                 windowHeight="700px"
+                 text={shareButtonProps.text}
+                 longtext={shareButtonProps.longtext}>
+                 <FacebookIcon size={50} />
+              </FacebookShareButton>
+              </div>
 
+              
+          </Col>
+
+        </Row>
 
 
         <Row>
@@ -103,6 +130,7 @@ class ThreeDayScope extends Component {
                 node="button" className="waves-effect waves-light" id="btn2"
                 style={{ backgroundColor: 'purple', color: 'yellow', border: 'solid 1px #C4DDE9', margin: 'auto', paddingBottom: '60px', paddingTop: '10px' }}>Pick another sign</Button>
             </Link>
+            
           </Col>
         </Row>
 
