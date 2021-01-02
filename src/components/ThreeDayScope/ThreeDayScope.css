@@ -59,6 +59,8 @@ button {
   background-color: #0e1214;
   margin-left: 20%;
   padding: 10px;
+  overflow:initial;
+  display: inline-block;
 }
 
 p {
@@ -72,11 +74,10 @@ p {
 
 .threeButtons {
   height: 50px;
-  color: white;
-  padding: 20px;
-  position: relative;
-  text-align: justify;
-  margin-left: 35%;
+  color: rgb(255, 236, 61);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sun2 {
@@ -87,7 +88,11 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
-
+.scopeimg{
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+}
 @media only screen and (max-width: 1024px) {
   .scopeAndFacts {
     display: unset;
@@ -96,6 +101,7 @@ p {
   .threeButtons {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   button {
     font-size: 1em;
@@ -138,11 +144,10 @@ p {
     margin-left: 10px;
   }
   .threeButtons {
-    padding-top: 0px;
-    width: 400px;
-    left: -60px;
-    bottom: -100px;
-    margin-left: 15%;
+    padding-top: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   button {
     font-size: 1em;
