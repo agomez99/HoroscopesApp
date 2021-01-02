@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom'
 import './ThreeDayScope.css'
 import { Row, Col, Button } from 'react-materialize';
 import {FacebookShareButton, FacebookIcon} from "react-share";
+import {TwitterShareButton,TwitterIcon} from "react-share";
+import {LinkedinShareButton,LinkedinIcon} from "react-share";
+
 
 
 class ThreeDayScope extends Component {
@@ -107,13 +110,22 @@ class ThreeDayScope extends Component {
           <label>Share</label>            
           <FacebookShareButton {...shareButtonProps} 
                  quote={this.state.sign + " " +  this.state.currentDate}
-                 media={shareButtonProps.media}
                   url={window.location.href} 
-                 windowHeight="700px"
-                 text={shareButtonProps.text}
-                 longtext={shareButtonProps.longtext}>
-                 <FacebookIcon size={50} />
+                 windowHeight="700px">
+                 <FacebookIcon size={50} round={true}  />
               </FacebookShareButton>
+              <TwitterShareButton {...shareButtonProps} 
+                 quote={this.state.sign + " " +  this.state.currentDate}
+                  url={window.location.href} 
+                 windowHeight="700px">
+                 <TwitterIcon size={50} round={true}  />
+              </TwitterShareButton>
+              <LinkedinShareButton {...shareButtonProps} 
+                 quote={this.state.sign + " " +  this.state.currentDate}
+                  url={window.location.href} 
+                 windowHeight="700px">
+                 <LinkedinIcon size={50} round={true}  />
+              </LinkedinShareButton>
               </div>
 
               
