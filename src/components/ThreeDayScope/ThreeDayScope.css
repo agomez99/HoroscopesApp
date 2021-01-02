@@ -6,7 +6,6 @@
 h1 {
   align-self: center;
   color: #f8fdff;
-  background-color: #0e1214;
   opacity: 0.8;
   text-align: center;
   border-radius: 0px;
@@ -25,14 +24,12 @@ h3 {
   height: 100%;
 }
 
-.zodiac {
-  padding: 5px;
-  opacity: 1;
-  text-align: center;
+.zodiac-hdr {
+
   font-family: "Sawarabi Mincho", sans-serif;
 }
 #dateRange {
-  display: none;
+  font-size:1.5rem;
 }
 
 .scopeAndFacts h4 {
@@ -92,6 +89,7 @@ p {
   display: block;
   margin-left: auto;
   margin-right:auto;
+  border-radius: 50%;
 }
 @media only screen and (max-width: 1024px) {
   .scopeAndFacts {
@@ -132,7 +130,14 @@ p {
     text-align: center;
   }
   .zodiac {
-    margin-top: 20px;
+    padding: 5px;
+    opacity: 1;
+    display:block;
+    text-align: center;
+    margin-top:0;
+    margin-right:auto;
+    font-family: "Sawarabi Mincho", sans-serif;
+  
   }
 }
 
@@ -191,8 +196,15 @@ p {
   }
 
   .zodiac {
-    margin-left: 40%;
     margin-top: 5%;
+    padding: 5px;
+    opacity: 1;
+    display:block;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    font-family: "Sawarabi Mincho", sans-serif;
+  
   }
   .sunFacts p {
     margin-left: -10%;
