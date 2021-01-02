@@ -7,7 +7,6 @@ import { Row, Col, Button } from 'react-materialize';
 import { FacebookShareButton, FacebookIcon } from "react-share";
 import { TwitterShareButton, TwitterIcon } from "react-share";
 import { LinkedinShareButton, LinkedinIcon } from "react-share";
-
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 
 
@@ -88,6 +87,11 @@ class ThreeDayScope extends Component {
       image: signImage
     }
     )
+        
+    // let data;
+    // if (response.data.loading) {
+    //   data = <img src={ require('../../components/Loading/Loading')} />
+    // }
   }
 
   render() {
@@ -100,22 +104,28 @@ class ThreeDayScope extends Component {
       longtext:
         "Horoscope."
     };
+
+
     return (
+      
       <div className="scope">
         <h1 className="title-hdr">Zodiaks</h1>
         <Row>
           <Col className=" white-text" s={6}>
             <div className='threeScopes' >
             <h1 className="zodiac-hdr">{this.state.sign}</h1>
+            <span >
 
             <h1 id='dateRange'>({this.state.dateRange})</h1>
-
               <h3>{this.state.day} - {this.state.currentDate}</h3>
-              <div >
                 <img src={this.state.image} alt="scope " className="scopeimg" />
                 <p>{this.state.description}</p>
-              </div>
+              </span>
               <div className='threeButtons'>
+
+<div className="tooltip">Hover over me
+  <span className="tooltiptext">Tooltip text</span>
+</div>
                 <Button onClick={() => this.clickYesterday()}
                   node="button" className="waves-effect waves-purple"
                   style={{ marginRight: '10px', backgroundColor: 'black', color: 'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center', paddingBottom: '30px' }} ><FaAngleDoubleLeft size={30} /></Button>
