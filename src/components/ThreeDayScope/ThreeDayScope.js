@@ -122,6 +122,13 @@ class ThreeDayScope extends Component {
                   node="button" className="waves-effect waves-purple"
                   style={{ backgroundColor: 'black', color: 'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center', paddingBottom: '30px' }}><FaAngleDoubleRight size={30} /></Button>
               </div>
+              <div className="shareDiv">
+              <label>Share</label>
+              <Twitter link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />   
+              <Facebook  link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} /> 
+              <Linkedin  link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />              
+             
+            </div>
             </div>
           </Col>
 
@@ -134,15 +141,6 @@ class ThreeDayScope extends Component {
                 node="button" className="waves-effect waves-light" id="btn"
                 style={{ backgroundColor: 'purple', color: 'yellow', border: 'solid 1px #C4DDE9', margin: 'auto', paddingBottom: '50px', paddingTop: '20px', display: 'flex' }}>Pick another sign</Button>
             </Link>
-            <div >
-              <label>Share</label>
-              <Twitter link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />   
-              <Facebook  link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} /> 
-              <Linkedin  link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />              
-             
-            </div>
-
-
           </Col>
 
         </Row>
