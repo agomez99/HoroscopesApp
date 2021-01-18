@@ -80,7 +80,9 @@ p {
   padding: 20px;
   position: relative;
   text-align: justify;
-  margin-left: 35%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .sun2 {
