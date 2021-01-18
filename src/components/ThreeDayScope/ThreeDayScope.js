@@ -4,11 +4,11 @@ import SunFacts from '../SunFacts/SunFacts'
 import { Link } from 'react-router-dom'
 import './ThreeDayScope.css'
 import { Row, Col, Button } from 'react-materialize';
-import { FacebookShareButton, FacebookIcon } from "react-share";
-import { TwitterShareButton, TwitterIcon } from "react-share";
-import { LinkedinShareButton, LinkedinIcon } from "react-share";
+// import { FacebookShareButton, FacebookIcon } from "react-share";
+// import { TwitterShareButton, TwitterIcon } from "react-share";
+// import { LinkedinShareButton, LinkedinIcon } from "react-share";
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
-import { Twitter, Facebook } from 'react-social-sharing'
+import { Twitter, Facebook, Linkedin, } from 'react-social-sharing'
 
 
 
@@ -92,16 +92,6 @@ class ThreeDayScope extends Component {
 
   render() {
 
-    const shareButtonProps = {
-      url: "https://zodiacs.netlify.app/",
-      network: "Facebook",
-      text: "Give it a try - react-custom-share component",
-      media: "https://cdn.images.express.co.uk/img/dynamic/130/590x/secondary/love-horoscope-2020-zodiac-wheel-astrology-2561729.jpg?r=1602571722322",
-      longtext:
-        "Horoscope."
-    };
-
-
     return (
       
       <div className="scope">
@@ -147,26 +137,9 @@ class ThreeDayScope extends Component {
             <div >
               <label>Share</label>
               <Twitter link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />   
-              <Facebook  link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />              
-           
-              <FacebookShareButton {...shareButtonProps}
-                quote={this.state.sign + " " + this.state.currentDate}
-                url={window.location.href}
-                windowHeight="700px">
-                <FacebookIcon size={50} round={true} />
-              </FacebookShareButton>
-              <TwitterShareButton {...shareButtonProps}
-                quote={this.state.sign + " " + this.state.currentDate}
-                url={window.location.href}
-                windowHeight="700px">
-                <TwitterIcon size={50} round={true} />
-              </TwitterShareButton>
-              <LinkedinShareButton {...shareButtonProps}
-                quote={this.state.sign + " " + this.state.currentDate}
-                url={window.location.href}
-                windowHeight="700px">
-                <LinkedinIcon size={50} round={true} />
-              </LinkedinShareButton>
+              <Facebook  link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} /> 
+              <Linkedin  link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />              
+             
             </div>
 
 
@@ -183,27 +156,6 @@ class ThreeDayScope extends Component {
                 node="button" className="waves-effect waves-light" id="btn2"
                 style={{ backgroundColor: 'purple', color: 'yellow', border: 'solid 1px #C4DDE9', margin: 'auto', paddingBottom: '60px', paddingTop: '10px' }}>Pick another sign</Button>
             </Link>
-            <div >
-              <label>Share</label>
-              <FacebookShareButton {...shareButtonProps}
-                quote={this.state.sign + " " + this.state.currentDate}
-                url={window.location.href}
-                windowHeight="700px">
-                <FacebookIcon size={50} round={true} />
-              </FacebookShareButton>
-              <TwitterShareButton {...shareButtonProps}
-                quote={this.state.sign + " " + this.state.currentDate}
-                url={window.location.href}
-                windowHeight="700px">
-                <TwitterIcon size={50} round={true} />
-              </TwitterShareButton>
-              <LinkedinShareButton {...shareButtonProps}
-                quote={this.state.sign + " " + this.state.currentDate}
-                url={window.location.href}
-                windowHeight="700px">
-                <LinkedinIcon size={50} round={true} />
-              </LinkedinShareButton>
-            </div>
 
 
           </Col>
