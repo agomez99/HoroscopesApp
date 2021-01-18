@@ -8,7 +8,7 @@ import { FacebookShareButton, FacebookIcon } from "react-share";
 import { TwitterShareButton, TwitterIcon } from "react-share";
 import { LinkedinShareButton, LinkedinIcon } from "react-share";
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
-import { Twitter } from 'react-social-sharing'
+import { Twitter, Facebook } from 'react-social-sharing'
 
 
 
@@ -146,7 +146,9 @@ class ThreeDayScope extends Component {
             </Link>
             <div >
               <label>Share</label>
-              <Twitter link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />              
+              <Twitter link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />   
+              <Facebook  link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />              
+           
               <FacebookShareButton {...shareButtonProps}
                 quote={this.state.sign + " " + this.state.currentDate}
                 url={window.location.href}
