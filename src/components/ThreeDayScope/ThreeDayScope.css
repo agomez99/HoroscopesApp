@@ -71,19 +71,16 @@ p {
 
 .threeButtons {
   height: 50px;
-<<<<<<< Updated upstream
   color: rgb(255, 236, 61);
   display: flex;
   justify-content: center;
   align-items: center;
-=======
   display:flex;
   color: white;
   padding: 20px;
   position: relative;
   text-align: justify;
   margin-left: 35%;
->>>>>>> Stashed changes
 }
 
 .sun2 {

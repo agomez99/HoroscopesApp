@@ -8,14 +8,12 @@ import { FacebookShareButton, FacebookIcon } from "react-share";
 import { TwitterShareButton, TwitterIcon } from "react-share";
 import { LinkedinShareButton, LinkedinIcon } from "react-share";
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
+import { Twitter } from 'react-social-sharing'
+
 
 
 class ThreeDayScope extends Component {
-
   constructor(props) {
-
-
-
     super(props)
 
     this.state = {
@@ -72,7 +70,6 @@ class ThreeDayScope extends Component {
       signImage = "https://i.ibb.co/rQb81zn/2a.png";
     console.log(signImage);
 
-
     const response = await axios.post(`https://aztro.sameerkumar.website/?sign=${signId}&day=${this.state.day}`)
     this.setState({
       dateRange: response.data['date_range'],
@@ -87,7 +84,6 @@ class ThreeDayScope extends Component {
       image: signImage
     }
     )
-        
     // let data;
     // if (response.data.loading) {
     //   data = <img src={ require('../../components/Loading/Loading')} />
@@ -123,9 +119,9 @@ class ThreeDayScope extends Component {
               </span>
               <div className='threeButtons'>
 
-<div className="tooltip">Hover over me
-  <span className="tooltiptext">Tooltip text</span>
-</div>
+              <div className="tooltip">Hover over me
+                <span className="tooltiptext">Tooltip text</span>
+              </div>
                 <Button onClick={() => this.clickYesterday()}
                   node="button" className="waves-effect waves-purple"
                   style={{ marginRight: '10px', backgroundColor: 'black', color: 'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center', paddingBottom: '30px' }} ><FaAngleDoubleLeft size={30} /></Button>
@@ -150,6 +146,7 @@ class ThreeDayScope extends Component {
             </Link>
             <div >
               <label>Share</label>
+              <Twitter link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />              
               <FacebookShareButton {...shareButtonProps}
                 quote={this.state.sign + " " + this.state.currentDate}
                 url={window.location.href}
