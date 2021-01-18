@@ -107,17 +107,17 @@ class ThreeDayScope extends Component {
                 <img src={this.state.image} alt="scope " className="scopeimg" />
                 <p>{this.state.description}</p>
               </span>
-              <div className='threeButtons'>
 
-              <div className="tooltip">Hover over me
-                <span className="tooltiptext">Tooltip text</span>
-              </div>
+              <div className='threeButtons'>
+              {/* <div className="tooltip">Hover over me
+                <span className="tooltiptext">Todays Horoscope</span>
+              </div> */}
                 <Button onClick={() => this.clickYesterday()}
                   node="button" className="waves-effect waves-purple"
                   style={{ marginRight: '10px', backgroundColor: 'black', color: 'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center', paddingBottom: '30px' }} ><FaAngleDoubleLeft size={30} /></Button>
                 <Button onClick={() => this.clickToday()}
                   node="button" className="waves-effect waves-purple"
-                  style={{ marginRight: '10px', backgroundColor: 'black', color: 'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center', paddingBottom: '30px' }}>Today</Button>
+                  style={{ marginRight: '10px', backgroundColor: 'black', color: 'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center', paddingBottom: '30px'}}>Today</Button>
                 <Button onClick={() => this.clickTmrw()}
                   node="button" className="waves-effect waves-purple"
                   style={{ backgroundColor: 'black', color: 'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center', paddingBottom: '30px' }}><FaAngleDoubleRight size={30} /></Button>
