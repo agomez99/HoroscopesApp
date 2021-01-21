@@ -127,12 +127,9 @@ class ThreeDayScope extends Component {
               <Twitter link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />   
               <Facebook  link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} /> 
               <Linkedin  link={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />              
-             
             </div>
             </div>
           </Col>
-
-
 
           <Col className="sun" s={6}>
             <SunFacts {...this.state} />
@@ -155,11 +152,8 @@ class ThreeDayScope extends Component {
                 style={{ backgroundColor: 'purple', color: 'yellow', border: 'solid 1px #C4DDE9', margin: 'auto', paddingBottom: '60px', paddingTop: '10px' }}>Pick another sign</Button>
             </Link>
 
-
           </Col>
         </Row>
-
-
       </div>
 
     )
