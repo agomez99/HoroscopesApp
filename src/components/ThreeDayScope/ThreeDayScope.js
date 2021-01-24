@@ -106,12 +106,14 @@ class ThreeDayScope extends Component {
         <Row>
           <Col className=" white-text" s={6}>
             <div className='threeScopes' >
+            
             <h1 className="zodiac-hdr">{this.state.sign}</h1>
+            <img src={this.state.image} alt="scope " className="scopeimg" />
+
             <span >
 
             <h1 id='dateRange'>({this.state.dateRange})</h1>
               <h3>{this.state.day} - {this.state.currentDate}</h3>
-                <img src={this.state.image} alt="scope " className="scopeimg" />
                 <p>{this.state.description}</p>
               </span>
 
