@@ -4,13 +4,20 @@ import SunFacts from '../SunFacts/SunFacts'
 import { Link } from 'react-router-dom'
 import './ThreeDayScope.css'
 import { Row, Col, Button } from 'react-materialize';
-// import { FacebookShareButton, FacebookIcon } from "react-share";
-// import { TwitterShareButton, TwitterIcon } from "react-share";
-// import { LinkedinShareButton, LinkedinIcon } from "react-share";
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 import { Twitter, Facebook, Linkedin, } from 'react-social-sharing'
-
-
+import Aquarius from './images/aquarius.png';
+import Aries from './images/aries.png';
+import Cancer from './images/cancer.png';
+import Capricorn from './images/capricorn.png';
+import Leo from './images/leo.png';
+import Libra from './images/libra.png';
+import Pisces from './images/pisces.png';
+import Sagittarius from './images/sagittarius.png';
+import Taurus from './images/taurus.png';
+import Virgo from './images/virgo.png';
+import Gemini from './images/gemini.png';
+import Scorpio from './images/scorpio.png'
 
 class ThreeDayScope extends Component {
   constructor(props) {
@@ -45,29 +52,29 @@ class ThreeDayScope extends Component {
     const signId = this.props.match.params.signId;
     let signImage = ""
     if (signId === "Virgo")
-      signImage = "https://i.ibb.co/gjMb2Fd/8a.png";
+      signImage = Virgo;
     if (signId === "Aries")
-      signImage = "https://i.ibb.co/Df7N39V/3a.png";
+      signImage = Aries;
     if (signId === "Leo")
-      signImage = "https://i.ibb.co/NZfwf7x/7a.png";
+      signImage = Leo;
     if (signId === "Cancer")
-      signImage = "https://i.ibb.co/k8RsJZH/6.png";
+      signImage = Cancer;
     if (signId === "Gemini")
-      signImage = "https://i.ibb.co/fGKWqk2/5a.png";
+      signImage = Gemini;
     if (signId === "Taurus")
-      signImage = "https://i.ibb.co/jzcS8zb/4a.png";
+      signImage = Taurus;
     if (signId === "Libra")
-      signImage = "https://i.ibb.co/844m9DW/9a.png";
+      signImage = Libra;
     if (signId === "Scorpio")
-      signImage = "https://i.ibb.co/2s7Br7s/11a.png";
+      signImage = Scorpio;
     if (signId === "Aquarius")
-      signImage = "https://i.ibb.co/R4VBwPp/1a.png";
+      signImage = Aquarius;
     if (signId === "Capricorn")
-      signImage = "https://i.ibb.co/wr8XZjQ/10a.png";
+      signImage = Capricorn;
     if (signId === "Sagittarius")
-      signImage = "https://i.ibb.co/gRztRrZ/12a.png";
+      signImage = Sagittarius;
     if (signId === "Pisces")
-      signImage = "https://i.ibb.co/rQb81zn/2a.png";
+      signImage = Pisces;
     console.log(signImage);
 
     const response = await axios.post(`https://aztro.sameerkumar.website/?sign=${signId}&day=${this.state.day}`)
