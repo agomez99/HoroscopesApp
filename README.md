@@ -1,6 +1,5 @@
 # Zodiaks
- A website created with the MERN stack that shows a daily horoscope generated from an API.
- <br>
+A website showing Daily Horoscope using zodiac signs <br>
 https://zodiacs.netlify.app/
 <br>
  API: https://aztro.readthedocs.io/ 
