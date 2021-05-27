@@ -159,6 +159,9 @@ p {
   h4 {
     margin: 0;
   }
+  .threeScopes {
+    margin-top: 25%;
+  }
   .threeScopes h3 {
     margin-bottom: 0;
   }
@@ -197,6 +200,7 @@ p {
     font-size: 7rem;
   }
   .threeScopes {
+    margin-top: 15%;
     margin-left: 3%;
     margin-right: 3%;
     opacity: 0.8;

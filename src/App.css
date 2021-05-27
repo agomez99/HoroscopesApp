@@ -91,12 +91,54 @@ text-align: center;
     
   }
 
-  @media only screen and (max-width: 500px) and (min-width: 116px) {
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
-  .title-hdr{
-    font-size: 12vw;
-    text-align: center;
-    padding-top: 10%;
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
 
-  }
+    .title-hdr1{
+      font-size: 12vw;
+      text-align: center;
+     margin-top: -90px;
+  
+    }
+    .footer{
+      color:white;
+        background-color: blueviolet;
+        height: 50px;
+        opacity: .9; 
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom:0;
+        width: 100%;
+      text-align: center;
+      margin-top: 100px;;
+      }
+
 }
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+ 
+
+
+
