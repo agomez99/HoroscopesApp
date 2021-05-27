@@ -3,15 +3,18 @@ import './SunFacts.css'
 import '../ThreeDayScope/ThreeDayScope.css'
 
 const SunFacts = (props) => {
+  if(props.color === "Peach"){
+    const fontsColor = "#FFE5B4";
 
-  if(props.color === "Yellow"){
-    console.log("yellow was the color")
-    // const fontColor = "red";
+    console.log("peach was the color")
   }
+
+  // console.log(props)
+
   return (
     <div className='sunFacts'>
       <h3>Sun Facts</h3>
-      <p >Color: {props.color}</p>
+      <p style={{color:"{props.color}"}}>Color: {props.color}</p>
       <p>Mood: {props.mood}</p>
       <p>Lucky Number: {props.luckyNumber}</p>
       <p>Lucky Time: {props.luckyTime}</p>

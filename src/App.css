@@ -26,6 +26,18 @@ body{
 }
 
 
+.footer{
+color:white;
+  margin-top: 5%;
+  background-color: blueviolet;
+  opacity: .9; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+text-align: center;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

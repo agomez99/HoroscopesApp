@@ -18,7 +18,7 @@ import Taurus from './images/taurus.png';
 import Virgo from './images/virgo.png';
 import Gemini from './images/gemini.png';
 import Scorpio from './images/scorpio.png'
-
+import Loading from '../Loading/loading.gif'
 class ThreeDayScope extends Component {
   constructor(props) {
     super(props)
@@ -75,10 +75,16 @@ class ThreeDayScope extends Component {
       signImage = Sagittarius;
     if (signId === "Pisces")
       signImage = Pisces;
-    console.log(signImage);
+    // console.log(signImage);
 
+
+
+    
     const response = await axios.post(`https://aztro.sameerkumar.website/?sign=${signId}&day=${this.state.day}`)
     this.setState({
+      
+
+
       dateRange: response.data['date_range'],
       currentDate: response.data['current_date'],
       description: response.data.description,
@@ -91,10 +97,11 @@ class ThreeDayScope extends Component {
       image: signImage
     }
     )
-    // let data;
-    // if (response.data.loading) {
-    //   data = <img src={ require('../../components/Loading/Loading')} />
-    // }
+    let data;
+    if (response.data.loading) {
+      data = <img src={ Loading} />
+    }
+
   }
 
   render() {
