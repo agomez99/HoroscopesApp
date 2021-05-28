@@ -19,31 +19,47 @@
 }
 
 .sunFacts p {
+  text-align: right;
   font-size: 1.5em;
   opacity: 0.8;
   color:rgb(245, 245, 245);
   margin-left: auto;
   margin-right:auto;
   margin:0;
-  padding: 0;
+  padding: 5px 5px;
   
-}
 
+}
+.sunleft p{
+  text-align: left;
+  font-size: 1.5em;
+  opacity: 0.8;
+  color:rgb(245, 245, 245);
+  margin-left: auto;
+  margin-right:auto;
+  margin:0;
+
+}
 
 @media only screen and (max-width: 415px) {
   .sunFacts {
     color: #ffffff;
     font-family: "Acme", sans-serif;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
     background-color: #0e1214;
     opacity: 0.8;
-    margin-left: 40%;
-    margin-top: 5%;
+    text-align: left;
     
   }
+  .sunleft p{
+    text-align: left;
+    font-size: 1.5em;
+    opacity: 0.8;
+    color:rgb(245, 245, 245);
+    margin-left: auto;
+    margin-right:auto;
+    margin:0;
+    padding: 5px 5px;
+  }  
 
 }
 
@@ -51,15 +67,42 @@
 
 
 
+@media only screen and (max-width: 500px) and (min-width: 116px){
+.sunFacts{
+  font-size: 0.8rem;
+  opacity: 0.8;
+  background-color: #0e1214;
+  margin-bottom: 15%;
+  padding-bottom: 0;
+  display: inline;
 
-
-
+}
+.sunleft p{
+  text-align: left;
+  width:100%;
+  font-size: 1.5em;
+  opacity: 0.8;
+  color:rgb(245, 245, 245);
+  margin-left: auto;
+  margin-right:auto;
+  margin:0;
+}
+}
 @media only screen and (max-width: 400px) and (min-width: 416px) {
   .sunFacts {
     flex-direction: row;
     justify-content: space-between;
   }
-
+  .sunleft p{
+    text-align: left;
+    font-size: 1.5em;
+    opacity: 0.8;
+    color:rgb(245, 245, 245);
+    margin-left: auto;
+    margin-right:auto;
+    margin:0;
+    padding: 0;}
+  
   p {
     padding: 10px;
     

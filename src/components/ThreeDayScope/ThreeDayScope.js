@@ -160,7 +160,7 @@ class ThreeDayScope extends Component {
 
 
         <Row>
-          <Col className="sun2" s={2}>
+          <Col className="sun2" s={6}>
           <SunFacts {...this.state} />
           </Col>
         </Row>
@@ -169,7 +169,7 @@ class ThreeDayScope extends Component {
         <Link to='/' style={{ textDecoration: 'none', color: '#C4DDE9', alignSelf: 'center' }}>
               <Button
                 node="button" className="waves-effect waves-light" id="btn2"
-                style={{ backgroundColor: 'purple', color: 'yellow', border: 'solid 1px #C4DDE9', margin: 'auto', paddingBottom: '40px', paddingTop: '10px' }}>Pick another sign</Button>
+                style={{ backgroundColor: 'purple', color: 'yellow', border: 'solid 1px #C4DDE9', margin: 'auto', marginTop:'25px',paddingBottom: '40px', paddingTop: '10px' }}>Pick another sign</Button>
             </Link>
 
               </Col>
