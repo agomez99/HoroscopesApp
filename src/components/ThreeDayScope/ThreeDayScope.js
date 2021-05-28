@@ -129,14 +129,13 @@ class ThreeDayScope extends Component {
                 <span className="tooltiptext">Todays Horoscope</span>
               </div> */}
                 <Button onClick={() => this.clickYesterday()}
-                  node="button" className="waves-effect waves-purple"
-                  style={{ marginRight: '10px', backgroundColor: 'black', color: 'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center', paddingBottom: '30px' }} ><FaAngleDoubleLeft size={30} /></Button>
+                  node="button" className="daybtn"><label>Yesterday</label><br></br>
+                <FaAngleDoubleLeft size={30} /></Button>
                 <Button onClick={() => this.clickToday()}
-                  node="button" className="waves-effect waves-purple"
-                  style={{ marginRight: '10px', backgroundColor: 'black', color: 'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center', paddingBottom: '30px'}}>Today</Button>
+                  node="button" className="daybtn">Today</Button>
                 <Button onClick={() => this.clickTmrw()}
-                  node="button" className="waves-effect waves-purple"
-                  style={{ backgroundColor: 'black', color: 'yellow', border: 'solid 1px #C4DDE9', padding: '20px', textAlign: 'center', paddingBottom: '30px' }}><FaAngleDoubleRight size={30} /></Button>
+                  node="button" className="daybtn"><label>Tomorrow</label><br></br>
+                  <FaAngleDoubleRight size={30} /></Button>
               </div>
               <div className="shareDiv">
               <label>Share</label>
