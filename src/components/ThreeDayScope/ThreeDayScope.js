@@ -18,7 +18,7 @@ import Taurus from './images/taurus.png';
 import Virgo from './images/virgo.png';
 import Gemini from './images/gemini.png';
 import Scorpio from './images/scorpio.png'
-import Loading from '../Loading/loading.gif'
+// import Loading from '../Loading/loading.gif'
 class ThreeDayScope extends Component {
   constructor(props) {
     super(props)
@@ -97,10 +97,10 @@ class ThreeDayScope extends Component {
       image: signImage
     }
     )
-    let data;
-    if (response.data.loading) {
-      data = <img src={ Loading} />
-    }
+    // let data;
+    // if (response.data.loading) {
+    //   data = <img src={ Loading} />
+    // }
 
   }
 

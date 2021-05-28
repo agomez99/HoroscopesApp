@@ -4,7 +4,7 @@ import '../ThreeDayScope/ThreeDayScope.css'
 
 const SunFacts = (props) => {
   if(props.color === "Peach"){
-    const fontsColor = "#FFE5B4";
+    // const fontsColor = "#FFE5B4";
 
     console.log("peach was the color")
   }

@@ -25,17 +25,21 @@ body{
     z-index: 1;
 }
 
+.d-flex{
 
+}
 .footer{
 color:white;
   margin-top: 5%;
   background-color: blueviolet;
   opacity: .9; 
   position: absolute;
+  height:70px;
   left: 0;
   right: 0;
   width: 100%;
-text-align: center;
+  padding-top: 1%;
+  text-align: center;
 }
 
 .App-header {
