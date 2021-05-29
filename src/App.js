@@ -25,7 +25,6 @@ class App extends Component {
          </video>
           <Route exact path='/' component={LandingPage} />
           <Route path={'/horoscope/:signId'} component={ThreeDayScope} />
-
         </main>
       </>
     )
