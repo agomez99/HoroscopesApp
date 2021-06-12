@@ -198,15 +198,6 @@ class ThreeDayScope extends Component {
                 node="button"
                 className="waves-effect waves-light"
                 id="btn"
-                style={{
-                  backgroundColor: "purple",
-                  color: "yellow",
-                  border: "solid 1px #C4DDE9",
-                  margin: "auto",
-                  paddingBottom: "50px",
-                  paddingTop: "20px",
-                  display: "flex",
-                }}
               >
                 Pick another sign
               </Button>
@@ -233,15 +224,7 @@ class ThreeDayScope extends Component {
                 node="button"
                 className="waves-effect waves-light"
                 id="btn2"
-                style={{
-                  backgroundColor: "purple",
-                  color: "yellow",
-                  border: "solid 1px #C4DDE9",
-                  margin: "auto",
-                  marginTop: "25px",
-                  paddingBottom: "40px",
-                  paddingTop: "10px",
-                }}
+               
               >
                 Pick another sign
               </Button>

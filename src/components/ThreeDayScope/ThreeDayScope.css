@@ -94,7 +94,7 @@ p {
   margin: 0px 5px;
   
 }
-.btn{
+#btn{
   background-color:purple;
   color:yellow;
   border:'solid 1px #C4DDE9';
@@ -102,6 +102,15 @@ p {
   padding-bottom: 50px;
   padding-top:20px;
   display: flex;
+}
+#btn2{
+  background-color: purple;
+  color:yellow;
+  margin:auto;
+  border:"solid 1px #C4DDE9";
+  margin-top: 25px;
+  padding-bottom: 40px;
+  padding-top:10px
 }
 .btn:hover{
   background-color: rgb(205, 33, 221);
