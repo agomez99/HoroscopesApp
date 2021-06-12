@@ -106,10 +106,20 @@ class ThreeDayScope extends Component {
       
       <div className="scope">
          <MetaTags>
-            <title>Page 1</title>
-            <meta name="description" content="Todays Horoscope" />
-            <meta property="og:title" content="Zodiaks" />
-            <meta property="og:image" content='./images/leo.png' />
+      <meta property="og:url" content="your url" />
+      <meta property="og:type" content="website" />
+      <meta property="fb:app_id" content="your fb id" />
+      <meta property="og:title" content="Zodiacs"/>
+      <meta
+      property="og:description"
+      content="Today's Horoscope"/> 
+
+      <meta property="og:image" content="https://i.ibb.co/mcVQbxL/Z.jpg"/>
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="Todays Daily Horoscope "/>
+      <meta name="twitter:description" content=" Daily Horoscope."/>
+      <meta name="twitter:image" content="https://i.ibb.co/mcVQbxL/Z.jpg"/> 
+      <meta name="twitter:card" content="summary_large_image"/>
           </MetaTags>
         <h1 className="title-hdr">Zodiaks</h1>
         <Row>
