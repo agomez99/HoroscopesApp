@@ -94,6 +94,15 @@ p {
   margin: 0px 5px;
   
 }
+.btn{
+  background-color:purple;
+  color:yellow;
+  border:'solid 1px #C4DDE9';
+  margin:auto;
+  padding-bottom: 50px;
+  padding-top:20px;
+  display: flex;
+}
 .btn:hover{
   background-color: rgb(205, 33, 221);
   color:white;
