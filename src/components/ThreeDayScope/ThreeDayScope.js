@@ -120,8 +120,9 @@ class ThreeDayScope extends Component {
     return (
       <div className="scope">
         <ReactTitle title={this.state.sign + this.state.signEm} />
-
-        <h1 className="title-hdr">Zodiaks</h1>
+        <h1 className="title-hdr">
+          <a className='title-link' href="/">Zodiaks</a>
+        </h1>
         <Row>
           <Col className=" white-text" s={6}>
             <div className="threeScopes">
@@ -224,7 +225,6 @@ class ThreeDayScope extends Component {
                 node="button"
                 className="waves-effect waves-light"
                 id="btn2"
-               
               >
                 Pick another sign
               </Button>

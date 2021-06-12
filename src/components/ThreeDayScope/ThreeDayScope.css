@@ -14,6 +14,20 @@ h1 {
 h1.title-hdr {
   display: block;
 }
+
+a.title-link {
+  color: white;
+}
+
+a.title-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+a.title-link:active {
+  text-decoration: none;
+}
+
 h3 {
   font-family: "Sawarabi Mincho", sans-serif;
   color: rgb(227, 252, 2);
@@ -84,37 +98,36 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  margin-bottom:20px
+  margin-bottom: 20px;
 }
-.btn.daybtn{
-  color:rgb(251, 255, 8);
+.btn.daybtn {
+  color: rgb(251, 255, 8);
   background-color: rgb(0, 0, 0);
-  border:solid 1px #C4DDE9;
-  padding:30px 25px 60px 25px;
+  border: solid 1px #c4dde9;
+  padding: 30px 25px 60px 25px;
   margin: 0px 5px;
-  
 }
-#btn{
-  background-color:purple;
-  color:yellow;
-  border:'solid 1px #C4DDE9';
-  margin:auto;
+#btn {
+  background-color: purple;
+  color: yellow;
+  border: "solid 1px #C4DDE9";
+  margin: auto;
   padding-bottom: 50px;
-  padding-top:20px;
+  padding-top: 20px;
   display: flex;
 }
-#btn2{
+#btn2 {
   background-color: purple;
-  color:yellow;
-  margin:auto;
-  border:"solid 1px #C4DDE9";
+  color: yellow;
+  margin: auto;
+  border: "solid 1px #C4DDE9";
   margin-top: 25px;
   padding-bottom: 40px;
-  padding-top:10px
+  padding-top: 10px;
 }
-.btn:hover{
+.btn:hover {
   background-color: rgb(205, 33, 221);
-  color:white;
+  color: white;
 }
 
 .shareDiv {
