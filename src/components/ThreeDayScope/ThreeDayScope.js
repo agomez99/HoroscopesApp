@@ -17,7 +17,9 @@ import Sagittarius from './images/sagittarius.png';
 import Taurus from './images/taurus.png';
 import Virgo from './images/virgo.png';
 import Gemini from './images/gemini.png';
-import Scorpio from './images/scorpio.png'
+import Scorpio from './images/scorpio.png';
+import MetaTags from 'react-meta-tags';
+
 // import Loading from '../Loading/loading.gif'
 class ThreeDayScope extends Component {
   constructor(props) {
@@ -77,14 +79,8 @@ class ThreeDayScope extends Component {
       signImage = Pisces;
     // console.log(signImage);
 
-
-
-    
     const response = await axios.post(`https://aztro.sameerkumar.website/?sign=${signId}&day=${this.state.day}`)
     this.setState({
-      
-
-
       dateRange: response.data['date_range'],
       currentDate: response.data['current_date'],
       description: response.data.description,
@@ -109,6 +105,12 @@ class ThreeDayScope extends Component {
     return (
       
       <div className="scope">
+         <MetaTags>
+            <title>Page 1</title>
+            <meta name="description" content="Todays Horoscope" />
+            <meta property="og:title" content="Zodiaks" />
+            <meta property="og:image" content='./images/leo.png' />
+          </MetaTags>
         <h1 className="title-hdr">Zodiaks</h1>
         <Row>
           <Col className=" white-text" s={6}>
@@ -125,9 +127,6 @@ class ThreeDayScope extends Component {
               </span>
 
               <div className='threeButtons'>
-              {/* <div className="tooltip">Hover over me
-                <span className="tooltiptext">Todays Horoscope</span>
-              </div> */}
                 <Button onClick={() => this.clickYesterday()}
                   node="button" className="daybtn"><label>Yesterday</label><br></br>
                 <FaAngleDoubleLeft size={30} /></Button>
