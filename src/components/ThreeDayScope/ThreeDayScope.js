@@ -114,11 +114,11 @@ class ThreeDayScope extends Component {
       property="og:description"
       content="Today's Horoscope"/> 
 
-      <meta property="og:image" content="https://i.ibb.co/mcVQbxL/Z.jpg"/>
+      <meta property="og:image" content={this.state.image}/>
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content="Todays Daily Horoscope "/>
       <meta name="twitter:description" content=" Daily Horoscope."/>
-      <meta name="twitter:image" content="https://i.ibb.co/mcVQbxL/Z.jpg"/> 
+      <meta name="twitter:image" content={this.state.image}/> 
       <meta name="twitter:card" content="summary_large_image"/>
           </MetaTags>
         <h1 className="title-hdr">Zodiaks</h1>
