@@ -18,7 +18,7 @@ import Taurus from './images/taurus.png';
 import Virgo from './images/virgo.png';
 import Gemini from './images/gemini.png';
 import Scorpio from './images/scorpio.png';
-import MetaTags from 'react-meta-tags';
+//import MetaTags from 'react-meta-tags';
 import {ReactTitle} from 'react-meta-tags';
 
 // import Loading from '../Loading/loading.gif'
