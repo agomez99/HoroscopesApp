@@ -19,6 +19,7 @@ import Virgo from './images/virgo.png';
 import Gemini from './images/gemini.png';
 import Scorpio from './images/scorpio.png';
 import MetaTags from 'react-meta-tags';
+import {ReactTitle} from 'react-meta-tags';
 
 // import Loading from '../Loading/loading.gif'
 class ThreeDayScope extends Component {
@@ -105,22 +106,8 @@ class ThreeDayScope extends Component {
     return (
       
       <div className="scope">
-         <MetaTags>
-      <meta property="og:url" content="your url" />
-      <meta property="og:type" content="website" />
-      <meta property="fb:app_id" content="your fb id" />
-      <meta property="og:title" content="Zodiacs"/>
-      <meta
-      property="og:description"
-      content="Today's Horoscope"/> 
+          <ReactTitle title="Page 2"/>
 
-      <meta property="og:image" content={this.state.image}/>
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:title" content="Todays Daily Horoscope "/>
-      <meta name="twitter:description" content=" Daily Horoscope."/>
-      <meta name="twitter:image" content={this.state.image}/> 
-      <meta name="twitter:card" content="summary_large_image"/>
-          </MetaTags>
         <h1 className="title-hdr">Zodiaks</h1>
         <Row>
           <Col className=" white-text" s={6}>
