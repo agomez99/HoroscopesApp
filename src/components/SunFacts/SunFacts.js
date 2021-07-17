@@ -14,7 +14,7 @@ const SunFacts = (props) => {
 
   return (
     <div className="sunFacts">
-      <h3>Sun Facts</h3>
+      <h3>Today's Sun Facts</h3>
       <Row>
         <Col>
           <p>Color:</p>

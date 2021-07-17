@@ -18,7 +18,6 @@ import Taurus from "./images/taurus.png";
 import Virgo from "./images/virgo.png";
 import Gemini from "./images/gemini.png";
 import Scorpio from "./images/scorpio.png";
-//import MetaTags from 'react-meta-tags';
 import { ReactTitle } from "react-meta-tags";
 
 // import Loading from '../Loading/loading.gif'
@@ -121,7 +120,7 @@ class ThreeDayScope extends Component {
       <div className="scope">
         <ReactTitle title={this.state.sign + this.state.signEm} />
         <h1 className="title-hdr">
-          <a className='title-link' href="/">Zodiaks</a>
+          <a className='title-link' href="/">Today's Horoscope</a>
         </h1>
         <Row>
           <Col className=" white-text" s={6}>
@@ -134,7 +133,7 @@ class ThreeDayScope extends Component {
                 <h3>
                   {this.state.day} - {this.state.currentDate}
                 </h3>
-                <p>{this.state.description}</p>
+                <div style={{marginTop:"5%", marginLeft:"3%",marginRight:"3%",  textAlign:"left"}}><p>{this.state.description}</p></div>
               </span>
 
               <div className="threeButtons">
@@ -143,7 +142,7 @@ class ThreeDayScope extends Component {
                   node="button"
                   className="daybtn"
                 >
-                  <label>Yesterday</label>
+                  Yesterday
                   <br></br>
                   <FaAngleDoubleLeft size={30} />
                 </Button>
@@ -152,6 +151,7 @@ class ThreeDayScope extends Component {
                   node="button"
                   className="daybtn"
                 >
+                <br></br>
                   Today
                 </Button>
                 <Button
@@ -159,7 +159,7 @@ class ThreeDayScope extends Component {
                   node="button"
                   className="daybtn"
                 >
-                  <label>Tomorrow</label>
+                  Tomorrow
                   <br></br>
                   <FaAngleDoubleRight size={30} />
                 </Button>
