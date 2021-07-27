@@ -251,15 +251,20 @@ p {
   }
   .threeScopes {
     margin-top: 15%;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
     opacity: 0.8;
     background-color: #0e1214;
-    padding: 8px;
+    padding: 5px;
     overflow: initial;
   }
+  .threeScopes p {
+    margin-left: 5%;
+    margin-right: 5%;
+
+  }
   .threeButtons {
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 15%;
     display: flex;
     justify-content: center;
@@ -293,6 +298,14 @@ p {
     border-color: transparent;
     background-color: #0e1214;
     bottom: 60px;
+  }
+  .btn.daybtn{
+    padding:8px;
+    border-radius: 5px;
+
+  }
+  svg{
+    display:none;
   }
   .sunFacts {
     margin-left: 5px;

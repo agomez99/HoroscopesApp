@@ -151,7 +151,6 @@ class ThreeDayScope extends Component {
                   node="button"
                   className="daybtn"
                 >
-                <br></br>
                   Today
                 </Button>
                 <Button
