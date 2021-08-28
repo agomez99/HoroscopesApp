@@ -124,7 +124,7 @@ class ThreeDayScope extends Component {
             <title>Today's Horoscope</title>
             <meta name="description" content="Some description." />
             <meta property="og:title" content="MyApp" />
-            <meta property="og:image" content={this.state.signImage} />
+            <meta property="og:image" content={this.state.image} />
           </MetaTags>
         <ReactTitle title={this.state.sign + this.state.signEm} />
         <h1 className="title-hdr">
