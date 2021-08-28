@@ -137,10 +137,10 @@ class ThreeDayScope extends Component {
       content="Web site created using create-react-app"
     />
     <title>Zodiaks</title>
-      <meta property="og:url" content="your url" />
-      <meta property="og:type" content="website" />
+      <meta property="og:url" content={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />
+      <meta property="og:type" content="Today's horoscope" />
       <meta property="fb:app_id" content="your fb id" />
-      <meta property="og:title" content="Zodiacs"/>
+      <meta property="og:title" content="Horoscopoe the day"/>
       <meta
       property="og:description"
       content="Today's Horoscope"/>
@@ -149,7 +149,7 @@ class ThreeDayScope extends Component {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content="Todays Daily Horoscope "/>
       <meta name="twitter:description" content=" Daily Horoscope."/>
-      <meta name="twitter:image" content="https://i.ibb.co/mcVQbxL/Z.jpg"/>
+      <meta name="twitter:image" content={this.state.image}/>
       <meta name="twitter:card" content="summary_large_image"/>
   </head>
         <h1 className="title-hdr">
