@@ -19,6 +19,8 @@ import Virgo from "./images/virgo.png";
 import Gemini from "./images/gemini.png";
 import Scorpio from "./images/scorpio.png";
 import { ReactTitle } from "react-meta-tags";
+import MetaTags from 'react-meta-tags';
+
 
 // import Loading from '../Loading/loading.gif'
 class ThreeDayScope extends Component {
@@ -118,6 +120,12 @@ class ThreeDayScope extends Component {
   render() {
     return (
       <div className="scope">
+        <MetaTags>
+            <title>Today's Horoscope</title>
+            <meta name="description" content="Some description." />
+            <meta property="og:title" content="MyApp" />
+            <meta property="og:image" content={this.state.signImage} />
+          </MetaTags>
         <ReactTitle title={this.state.sign + this.state.signEm} />
         <h1 className="title-hdr">
           <a className='title-link' href="/">Today's Horoscope</a>
@@ -133,7 +141,7 @@ class ThreeDayScope extends Component {
                 <h3>
                   {this.state.day} - {this.state.currentDate}
                 </h3>
-                <div style={{marginTop:"5%", marginLeft:"3%",marginRight:"3%",  textAlign:"left"}}><p>{this.state.description}</p></div>
+                <div className="scopes" ><p>{this.state.description}</p></div>
               </span>
 
               <div className="threeButtons">

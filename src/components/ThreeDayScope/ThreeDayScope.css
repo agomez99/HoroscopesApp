@@ -113,10 +113,11 @@ p {
 #btn {
   background-color: purple;
   color: yellow;
-  border: "solid 1px #C4DDE9";
+  border: solid 1px yellow;
   margin: auto;
   padding-bottom: 50px;
   padding-top: 20px;
+  border-radius: 20px;
   display: flex;
 }
 #btn2 {
@@ -129,6 +130,10 @@ p {
   padding-top: 10px;
 }
 .btn:hover {
+  background-color: rgb(205, 33, 221);
+  color: white;
+}
+#btn:hover {
   background-color: rgb(205, 33, 221);
   color: white;
 }
@@ -151,6 +156,15 @@ p {
 .title-hdr {
   margin-right: auto;
   margin-left: auto;
+}
+.scopes{
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-top: 5%;
+  text-align: left;
+  overflow: visible;
+	overflow-y: hidden;
+  height: 300px;
 }
 .scopeimg {
   display: block;
@@ -216,7 +230,7 @@ p {
     margin-bottom: 0;
   }
   .threeScopes p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   a {
@@ -256,11 +270,11 @@ p {
     opacity: 0.8;
     background-color: #0e1214;
     padding: 5px;
-    overflow: initial;
   }
   .threeScopes p {
     margin-left: 5%;
     margin-right: 5%;
+    font-size: 1.2em;
 
   }
   .threeButtons {
@@ -269,6 +283,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
   }
   .shareDiv {
     padding-top: 0;
@@ -321,7 +336,14 @@ p {
   .threeScopes p {
     font-size: 1.5em;
   }
-
+  .scopes{
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-top: 5%;
+    text-align: left;
+    overflow: scroll;
+    height: 200px;
+  }
   .zodiac {
     margin-top: 5%;
     padding: 5px;
@@ -337,7 +359,7 @@ p {
   }
 
   .threeScopes p {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   .sun {
     display: none;

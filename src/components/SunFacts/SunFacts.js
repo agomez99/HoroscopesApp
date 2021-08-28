@@ -3,14 +3,11 @@ import "./SunFacts.css";
 import "../ThreeDayScope/ThreeDayScope.css";
 import { Row, Col } from "react-materialize";
 
+
 const SunFacts = (props) => {
-  if (props.color === "Peach") {
-    // const fontsColor = "#FFE5B4";
 
-    console.log("peach was the color");
-  }
-
-  // console.log(props)
+  const fontColor = (props.color) ? props.color : "white";
+  const lower = fontColor.toLowerCase();
 
   return (
     <div className="sunFacts">
@@ -25,7 +22,7 @@ const SunFacts = (props) => {
         </Col>
         <Col>
         <div className="sunleft">
-          <p>{props.color}</p>
+          <p style={{color:lower}}>{props.color}</p>
           <p> {props.mood}</p>
           <p>{props.luckyNumber}</p>
           <p>{props.luckyTime}</p>
