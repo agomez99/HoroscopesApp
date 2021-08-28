@@ -21,7 +21,7 @@ import Scorpio from "./images/scorpio.png";
 import { ReactTitle } from "react-meta-tags";
 
 
-// import Loading from '../Loading/loading.gif'
+ //import Loading from '../Loading/loading.gif'
 class ThreeDayScope extends Component {
   constructor(props) {
     super(props);
@@ -109,49 +109,22 @@ class ThreeDayScope extends Component {
       luckyTime: response.data["lucky_time"],
       image: signImage,
       signEm: signEmoji,
+      loading: false,
     });
-    // let data;
-    // if (response.data.loading) {
-    //   data = <img src={ Loading} />
-    // }
+
+    if (response.data.loading) {
+     this.setState({
+       image: <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="loading" />
+     })
+    }
   };
 
   render() {
     return (
       <div className="scope">
-        <ReactTitle title={this.state.sign + this.state.signEm} />
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/sunmoon.jpg" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" href="path/to/materialize.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <title>Zodiaks</title>
-      <meta property="og:url" content={"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />
-      <meta property="og:type" content="Today's horoscope" />
-      <meta property="fb:app_id" content="your fb id" />
-      <meta property="og:title" content="Horoscopoe the day"/>
-      <meta
-      property="og:description"
-      content="Today's Horoscope"/>
 
-    <meta property="og:image" content={this.state.image}/>
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:title" content="Todays Daily Horoscope "/>
-      <meta name="twitter:description" content=" Daily Horoscope."/>
-      <meta name="twitter:image" content={this.state.image}/>
-      <meta name="twitter:card" content="summary_large_image"/>
-  </head>
+        <ReactTitle title={this.state.sign + this.state.signEm} />
+  
         <h1 className="title-hdr">
           <a className='title-link' href="/">Today's Horoscope</a>
         </h1>
