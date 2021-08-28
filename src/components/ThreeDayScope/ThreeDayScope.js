@@ -19,7 +19,7 @@ import Virgo from "./images/virgo.png";
 import Gemini from "./images/gemini.png";
 import Scorpio from "./images/scorpio.png";
 import { ReactTitle } from "react-meta-tags";
-import MetaTags from 'react-meta-tags';
+import Helmet from "react-helmet";
 
 
 // import Loading from '../Loading/loading.gif'
@@ -120,12 +120,24 @@ class ThreeDayScope extends Component {
   render() {
     return (
       <div className="scope">
-        <MetaTags>
-            <title>Today's Horoscope</title>
-            <meta name="description" content="Some description." />
-            <meta property="og:title" content="MyApp" />
-            <meta property="og:image" content={this.state.image} />
-          </MetaTags>
+          <Helmet>
+      {/* General tags */}
+      <title>{this.state.description}</title>
+      <meta name="description" content={this.state.description} />
+      {/* OpenGraph tags */}
+      <meta name="og:url" content= {"https://zodiacs.netlify.app/horoscope/" + this.state.sign} />
+      <meta name="og:title" content={this.state.sign} />
+      <meta name="og:description" content={this.state.description} />
+      <meta name="og:image" content={this.state.image} />
+      <meta name="og:type" content="website" />
+      <meta name="fb:app_id" content=""/>
+      {/* Twitter Card tags */}
+      <meta name="twitter:title" content={this.state.sign} />
+      <meta name="twitter:description" content={this.state.description} />
+      <meta name="twitter:image" content={this.state.image} />
+      <meta name="twitter:card" content="summary" />
+
+    </Helmet>
         <ReactTitle title={this.state.sign + this.state.signEm} />
         <h1 className="title-hdr">
           <a className='title-link' href="/">Today's Horoscope</a>
