@@ -10,7 +10,7 @@ const SunFacts = (props) => {
   const lower = fontColor.toLowerCase();
 
   return (
-    <div className="sunFacts">
+    <div className="sunFacts" style={{borderColor:fontColor}}>
       <h3>Today's Sun Facts</h3>
       <Row>
         <Col>

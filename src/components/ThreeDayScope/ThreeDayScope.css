@@ -75,6 +75,9 @@ button {
   margin-left: 20%;
   padding: 10px;
   overflow: initial;
+  border-radius: 25px;
+  border-width: 10px;
+  border:solid;
 }
 
 p {

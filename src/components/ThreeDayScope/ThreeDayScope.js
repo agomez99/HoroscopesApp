@@ -111,6 +111,10 @@ class ThreeDayScope extends Component {
       signEm: signEmoji,
       loading: false,
     });
+    console.log(this.state.color);
+
+    const bordColor = (this.state.color).toLowerCase();
+    console.log(bordColor);
 
     if (response.data.loading) {
      this.setState({
@@ -118,7 +122,6 @@ class ThreeDayScope extends Component {
      })
     }
   };
-
   render() {
     return (
       <div className="scope">
@@ -130,7 +133,7 @@ class ThreeDayScope extends Component {
         </h1>
         <Row>
           <Col className=" white-text" s={6}>
-            <div className="threeScopes">
+            <div className="threeScopes"  style={{borderColor:(this.state.color).toLowerCase()}}>
               <h1 className="zodiac-hdr">{this.state.sign}</h1>
               <img src={this.state.image} alt="scope " className="scopeimg" />
 
