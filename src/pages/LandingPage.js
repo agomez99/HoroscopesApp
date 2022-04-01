@@ -7,7 +7,7 @@ export default class LandingPage extends Component {
   render() {
     return (
         <div>
-        <h1 className="title-hdr1">Zodiaks</h1>
+        {/* <h1 className="title-hdr1">Zodiaks</h1> */}
         <h1 className="hdr">Choose Your Sign</h1>
         <Signs />
       <div className="d-flex p-2 flex-column">

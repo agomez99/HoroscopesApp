@@ -67,19 +67,20 @@ color:white;
   font-size: 2rem;
   margin-left:auto;
   margin-right:auto;
+  margin-top: 5%;
   display: block;
   padding:12px;  
   white-space: nowrap;
   background-color: transparent;
 }
-
+/* 
 .title-hdr1{
   font-size: 8vw;
-  margin-top: 10%;
   text-align: center;
   color:rgb(255, 255, 255);
   background-color: transparent;
   text-shadow: 5px 10px 10px #ae00ff60;
+
 }
 
   .title-hdr{
@@ -88,8 +89,7 @@ color:white;
     background-color: transparent;
     display: inline;
     text-shadow: 5px 10px 10px #ae00ff60;
-    
-  }
+  } */
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
